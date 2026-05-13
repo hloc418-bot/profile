@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân | Trần Đồng Hữu Lộc </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .section-padding { padding: 80px 0; }
+        .navbar-brand { font-weight: bold; color: #0d6efd !important; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MY PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Về tôi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Kỹ năng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+                    <a href="buoi1.html">Đăng Nhập</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-2 fw-bold"> <span class="text-primary">Trần Đồng Hữu Lộc</span></h1>
+            <p class="lead mb-4">Web Developer | UI/UX Designer | Freelancer</p>
+            <a href="#contact" class="btn btn-primary btn-lg px-4 me-md-2">Liên hệ ngay</a>
+            <a href="#about" class="btn btn-outline-light btn-lg px-4">Tìm hiểu thêm</a>
+        </div>
+    </header>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <img src="https://via.placeholder.com/400x400" alt="Profile" class="img-fluid rounded-circle shadow">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="fw-bold mb-4">Về bản thân</h2>
+                    <p>Xin chào! Mình là Hữu Lộc, hiện đang theo học lớp DA25TTD chuyên ngành Công nghệ thông tin tại Đại học Trà Vinh. Mình có niềm đam mê mãnh liệt với việc xây dựng giao diện website và luôn tìm tòi những công nghệ mới như Bootstrap, React để tối ưu hóa trải nghiệm người dùng.</p>
+                    <p>Mục tiêu của tôi là trở thành một Fullstack Developer chuyên nghiệp và đóng góp giá trị cho cộng đồng mã nguồn mở.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Kỹ năng chuyên môn</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript (ReactJS, VueJS)</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <i class="bi bi-database display-4 text-primary mb-3"></i>
+                        <h3>Backend</h3>
+                        <p>Node.js, Python, MySQL, MongoDB</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <i class="bi bi-palette display-4 text-primary mb-3"></i>
+                        <h3>Design</h3>
+                        <p>Figma, Adobe XD, Photoshop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h2 class="fw-bold mb-4">Liên hệ với tôi</h2>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Họ và tên">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email của bạn">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Tin nhắn của bạn"></textarea>
+                        </div>
+                        <a href="123456.html">gửi lời nhắn</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2026 Bản quyền thuộc về Trần Đồng Hữu Lộc. Designed with Bootstrap.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
