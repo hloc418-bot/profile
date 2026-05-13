@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin đăng ký</title>
+
+    <style>
+        body{
+            background:#e8e8e8;
+            font-family:Arial, sans-serif;
+        }
+
+        .container{
+            width:750px;
+            margin:30px auto;
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+        }
+
+        .header{
+            background:#89a84a;
+            color:black;
+            text-align:center;
+            padding:20px;
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        .form{
+            padding:30px;
+        }
+
+        .row{
+            display:flex;
+            margin-bottom:20px;
+            align-items:center;
+        }
+
+        .row label{
+            width:180px;
+            font-size:18px;
+        }
+
+        .row input,
+        .row select,
+        .row textarea{
+            flex:1;
+            border:none;
+            border-bottom:1px solid black;
+            padding:8px;
+            font-size:16px;
+            outline:none;
+        }
+
+        textarea{
+            height:100px;
+            border:1px solid black !important;
+        }
+
+        .gender{
+            display:flex;
+            gap:40px;
+        }
+
+        .hobby{
+            display:flex;
+            gap:15px;
+            flex-wrap:wrap;
+        }
+
+        .buttons{
+            text-align:center;
+            margin-top:30px;
+        }
+
+        .buttons button{
+            padding:10px 20px;
+            font-size:20px;
+            margin:10px;
+            background:#89a84a;
+            border-radius:5px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        Thông tin đăng ký
+    </div>
+
+    <div class="form">
+
+        <div class="row">
+            <label>Họ tên:</label>
+            <input type="text" placeholder="Nhập họ tên">
+        </div>
+
+        <div class="row">
+            <label>Ngày sinh:</label>
+            <input type="date">
+        </div>
+
+        <div class="row">
+            <label>Giới tính:</label>
+
+            <div class="gender">
+                <div>
+                    <input type="radio" name="gt"> Nam
+                </div>
+
+                <div>
+                    <input type="radio" name="gt"> Nữ
+
+                </div>    
+
+                <div>
+                    <input type="radio" name="gt"> khác
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <label>Địa chỉ:</label>
+            <input type="text" placeholder="Nhập địa chỉ">
+        </div>
+
+        <div class="row">
+            <label>MSSV:</label>
+            <input type="text" placeholder="Nhập mã số sinh viên">
+        </div>
+
+        <div class="row">
+            <label>Lớp:</label>
+
+            <select>
+                <option>DA25TTC</option>
+                <option>DA25TTA</option>
+                <option>DA25TTB</option>
+                <option>DA25TTD</option>
+                </select>
+        </div>
+
+        <div class="row">
+            <label>Số điện thoại:</label>
+            <input type="text" placeholder="Nhập số điện thoại">
+        </div>
+
+        <div class="row">
+            <label>Email:</label>
+            <input type="email" placeholder="Nhập email">
+        </div>
+
+        <div class="row">
+            <label>Ảnh đại diện:</label>
+            <input type="file">
+        </div>
+
+        <div class="row">
+            <label>Sở trường:</label>
+
+            <div class="hobby">
+                <div><input type="checkbox"> Thiết kế web</div>
+                <div><input type="checkbox"> Lập trình web</div>
+                <div><input type="checkbox"> Thành thạo tiếng Trung</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <label>Mô tả sơ lược:</label>
+            <textarea></textarea>
+        </div>
+
+        <div class="buttons">
+            <button>Hủy bỏ</button>
+            <button>Đăng ký</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

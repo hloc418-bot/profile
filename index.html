@@ -2,145 +2,160 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio | Trần Đồng Hữu Lộc</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>Đăng nhập</title>
+
     <style>
-        .hero-section {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 100px 0;
+        body{
+            background:#e5e5e5;
+            font-family: Arial, sans-serif;
         }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border: 5px solid white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+        .container{
+            width:450px;
+            margin:20px auto;
+            background:white;
+            border-radius:5px;
+            padding:20px;
+            box-shadow:0 0 5px rgba(0,0,0,0.2);
         }
-        section {
-            padding: 60px 0;
+
+        .logo{
+            text-align:center;
         }
-        .progress {
-            height: 10px;
-            border-radius: 5px;
+
+        .logo img{
+            width:100px;
+        }
+
+        h2{
+            text-align:center;
+            font-size:18px;
+            margin-top:10px;
+        }
+
+        hr{
+            margin:20px 0;
+        }
+
+        .input-box{
+            display:flex;
+            margin-bottom:15px;
+        }
+
+        .input-box input{
+            flex:1;
+            padding:12px;
+            border:1px solid #ccc;
+            font-size:16px;
+        }
+
+        .icon{
+            width:45px;
+            background:#eee;
+            border:1px solid #ccc;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .remember{
+            margin-bottom:15px;
+        }
+
+        .login-btn{
+            width:48%;
+            padding:10px;
+            background:#0d6efd;
+            color:white;
+            border:none;
+            border-radius:3px;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        .student-btn{
+            width:100%;
+            padding:10px;
+            margin-top:10px;
+            background:#0d6efd;
+            color:white;
+            border:none;
+            border-radius:3px;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        .teacher-btn{
+            width:100%;
+            padding:10px;
+            margin-top:10px;
+            background:#dc3545;
+            color:white;
+            border:none;
+            border-radius:3px;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        .forgot{
+            margin-top:20px;
+        }
+
+        .top-row{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
         }
     </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">MY PROFILE</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">Giới thiệu</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Kỹ năng</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<div class="container">
 
-<section class="hero-section text-center">
-    <div class="container">
-        <img src="https://via.placeholder.com/150" class="rounded-circle profile-img mb-4" alt="Trần Đồng Hữu Lộc">
-        <h1 class="display-4 fw-bold">Trần Đồng Hữu Lộc</h1>
-        <p class="lead text-secondary">Sinh viên CNTT | Web Developer Intern | Freelancer</p>
-        <div class="mt-4">
-            <a href="#contact" class="btn btn-primary btn-lg px-4 me-2">Liên hệ ngay</a>
-            <a href="#skills" class="btn btn-outline-dark btn-lg px-4">Xem kỹ năng</a>
-        </div>
+    <div class="logo">
+        <img src="logo.png">
     </div>
-</section>
 
-<section id="about">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-                <h2 class="fw-bold mb-4">Giới thiệu</h2>
-                <p class="lead text-muted">
-                    Xin chào! Mình là <strong>Hữu Lộc</strong>, hiện đang theo học lớp <strong>DA25TTD</strong> chuyên ngành Công nghệ thông tin tại <strong>Đại học Trà Vinh</strong>. 
-                    Mình có niềm đam mê mãnh liệt với việc xây dựng giao diện website và luôn tìm tòi những công nghệ mới như Bootstrap, React để tối ưu hóa trải nghiệm người dùng.
-                </p>
-            </div>
-        </div>
+    <h2>
+        PHẦN MỀM TIN HỌC <br>
+        ĐÁNH GIÁ KẾT QUẢ RÈN LUYỆN CHO SINH VIÊN CHÍNH QUY <br>
+        TẠI ĐẠI HỌC TRÀ VINH
+    </h2>
+
+    <hr>
+
+    <div class="input-box">
+        <input type="email" placeholder="Email">
+        <div class="icon"></div>
     </div>
-</section>
 
-<section id="skills" class="bg-light">
-    <div class="container">
-        <h2 class="text-center fw-bold mb-5">Kỹ năng chuyên môn</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm p-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fab fa-html5 fa-2x text-danger me-3"></i>
-                        <h5 class="mb-0">HTML & CSS</h5>
-                    </div>
-                    <div class="progress mb-2">
-                        <div class="progress-bar bg-danger" style="width: 90%">90%</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm p-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fab fa-js fa-2x text-warning me-3"></i>
-                        <h5 class="mb-0">JavaScript</h5>
-                    </div>
-                    <div class="progress mb-2">
-                        <div class="progress-bar bg-warning text-dark" style="width: 80%">80%</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm p-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fab fa-bootstrap fa-2x text-primary me-3"></i>
-                        <h5 class="mb-0">Bootstrap 5</h5>
-                    </div>
-                    <div class="progress mb-2">
-                        <div class="progress-bar bg-primary" style="width: 85%">85%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="input-box">
+        <input type="password" placeholder="Mật khẩu">
+        <div class="icon"></div>
     </div>
-</section>
 
-<section id="contact">
-    <div class="container text-center">
-        <h2 class="fw-bold mb-4">Thông tin liên hệ</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="d-flex justify-content-center mb-3">
-                    <div class="me-4"><i class="fas fa-envelope text-primary"></i> hloc418@gmail.com</div>
-                    <div><i class="fas fa-phone text-success"></i> 0862293730</div>
-                </div>
-                <button class="btn btn-primary px-5 py-2 rounded-pill shadow">Gửi tin nhắn cho mình</button>
-            </div>
+    <div class="top-row">
+        <div class="remember">
+<input type="checkbox"> Nhớ mật khẩu
         </div>
-    </div>
-</section>
 
-<footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-        <p class="mb-2">© 2026 Trần Đồng Hữu Lộc - Tra Vinh University</p>
-        <div class="social-links">
-            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
-        </div>
+        <button class="login-btn">Đăng nhập</button>
     </div>
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <button class="student-btn">
+        Sinh viên (Đăng nhập bằng Email Microsoft)
+    </button>
+
+    <button class="teacher-btn">
+        Giảng viên (Đăng nhập bằng Email TVU)
+    </button>
+
+    <div class="forgot">
+        <a href="#">Quên mật khẩu?</a>
+    </div>
+
+</div>
 
 </body>
 </html>
